@@ -19,7 +19,7 @@ const serveAbout = (req, res) => {
 }
 
 const serveAnimals = (req, res) => {
-  const filePath = `${ROOT_DIR}/virtual_zoo/animals.html`;
+  const filePath = `${ROOT_DIR}/virtual_zoo/tiger.html`;
   res.sendFile(filePath);
 }
 
@@ -67,7 +67,7 @@ const createApp = () => {
     app.get("/", serveHome);
     app.get("/education", serveEducation);
     app.get("/about", serveAbout);
-    app.get("/animals", serveAnimals);
+    app.get("/tiger", serveAnimals);
     app.get("/contact", serveContact);
     app.get("/museum", serveMuseum);
     app.get("/analytics", serveAnalytics);
